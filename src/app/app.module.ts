@@ -9,6 +9,7 @@ import { TextesgenerauxComponent } from './textesgeneraux/textesgeneraux.compone
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegimesDesEtuesEtExamensetDesStagesComponent } from './regimes-des-etues-et-examenset-des-stages/regimes-des-etues-et-examenset-des-stages.component';
 import { ConcoursAdmissionEnsComponent } from './concours-admission-ens/concours-admission-ens.component';
+import { ConcoursAgregationComponent } from './concours-agregation/concours-agregation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ConcoursAdmissionEnsComponent } from './concours-admission-ens/concours
     TextesgenerauxComponent,
     NavbarComponent,
       RegimesDesEtuesEtExamensetDesStagesComponent,
-      ConcoursAdmissionEnsComponent
+      ConcoursAdmissionEnsComponent,
+      ConcoursAgregationComponent
   ],
   imports: [
     BrowserModule,
