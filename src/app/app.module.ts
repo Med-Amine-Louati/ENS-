@@ -8,6 +8,7 @@ import { CadreJuridiqueComponent } from './cadre-juridique/cadre-juridique.compo
 import { TextesgenerauxComponent } from './textesgeneraux/textesgeneraux.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegimesDesEtuesEtExamensetDesStagesComponent } from './regimes-des-etues-et-examenset-des-stages/regimes-des-etues-et-examenset-des-stages.component';
+import { ConcoursAdmissionEnsComponent } from './concours-admission-ens/concours-admission-ens.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RegimesDesEtuesEtExamensetDesStagesComponent } from './regimes-des-etue
     CadreJuridiqueComponent,
     TextesgenerauxComponent,
     NavbarComponent,
-      RegimesDesEtuesEtExamensetDesStagesComponent
+      RegimesDesEtuesEtExamensetDesStagesComponent,
+      ConcoursAdmissionEnsComponent
   ],
   imports: [
     BrowserModule,
