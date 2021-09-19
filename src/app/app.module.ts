@@ -7,6 +7,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CadreJuridiqueComponent } from './cadre-juridique/cadre-juridique.component';
 import { TextesgenerauxComponent } from './textesgeneraux/textesgeneraux.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RegimesDesEtuesEtExamensetDesStagesComponent } from './regimes-des-etues-et-examenset-des-stages/regimes-des-etues-et-examenset-des-stages.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     LandingPageComponent,
     CadreJuridiqueComponent,
     TextesgenerauxComponent,
-    NavbarComponent
+    NavbarComponent,
+      RegimesDesEtuesEtExamensetDesStagesComponent
   ],
   imports: [
     BrowserModule,
