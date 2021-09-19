@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RegimesDesEtuesEtExamensetDesStagesComponent } from './regimes-des-etues-et-examenset-des-stages/regimes-des-etues-et-examenset-des-stages.component';
 import { ConcoursAdmissionEnsComponent } from './concours-admission-ens/concours-admission-ens.component';
 import { ConcoursAgregationComponent } from './concours-agregation/concours-agregation.component';
+import { BourseEtVieUniversitaireComponent } from './bourse-et-vie-universitaire/bourse-et-vie-universitaire.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ConcoursAgregationComponent } from './concours-agregation/concours-agre
     NavbarComponent,
       RegimesDesEtuesEtExamensetDesStagesComponent,
       ConcoursAdmissionEnsComponent,
-      ConcoursAgregationComponent
+      ConcoursAgregationComponent,
+      BourseEtVieUniversitaireComponent
   ],
   imports: [
     BrowserModule,

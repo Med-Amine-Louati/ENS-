@@ -6,6 +6,7 @@ import { TextesgenerauxComponent } from './textesgeneraux/textesgeneraux.compone
 import { RegimesDesEtuesEtExamensetDesStagesComponent } from './regimes-des-etues-et-examenset-des-stages/regimes-des-etues-et-examenset-des-stages.component';
 import { ConcoursAdmissionEnsComponent } from './concours-admission-ens/concours-admission-ens.component'
 import { ConcoursAgregationComponent } from './concours-agregation/concours-agregation.component'
+import { BourseEtVieUniversitaireComponent } from './bourse-et-vie-universitaire/bourse-et-vie-universitaire.component'
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'cadrejuridique', component: CadreJuridiqueComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'cadrejuridique/les-regimes', component: RegimesDesEtuesEtExamensetDesStagesComponent },
   { path: 'cadrejuridique/admission', component: ConcoursAdmissionEnsComponent },
   { path: 'cadrejuridique/concours-dagregation', component: ConcoursAgregationComponent },
+  { path: 'cadrejuridique/bourse-et-vie-universitaire', component: BourseEtVieUniversitaireComponent },
 
 ];
 
