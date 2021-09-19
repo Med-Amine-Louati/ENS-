@@ -11,6 +11,7 @@ import { RegimesDesEtuesEtExamensetDesStagesComponent } from './regimes-des-etue
 import { ConcoursAdmissionEnsComponent } from './concours-admission-ens/concours-admission-ens.component';
 import { ConcoursAgregationComponent } from './concours-agregation/concours-agregation.component';
 import { BourseEtVieUniversitaireComponent } from './bourse-et-vie-universitaire/bourse-et-vie-universitaire.component';
+import { StatutsParticuliersComponent } from './statuts-particuliers/statuts-particuliers.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BourseEtVieUniversitaireComponent } from './bourse-et-vie-universitaire
       RegimesDesEtuesEtExamensetDesStagesComponent,
       ConcoursAdmissionEnsComponent,
       ConcoursAgregationComponent,
-      BourseEtVieUniversitaireComponent
+      BourseEtVieUniversitaireComponent,
+      StatutsParticuliersComponent
   ],
   imports: [
     BrowserModule,
