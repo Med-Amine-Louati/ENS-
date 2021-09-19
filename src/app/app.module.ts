@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CadreJuridiqueComponent } from './cadre-juridique/cadre-juridique.component';
 import { TextesgenerauxComponent } from './textesgeneraux/textesgeneraux.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     CadreJuridiqueComponent,
-    TextesgenerauxComponent
+    TextesgenerauxComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
