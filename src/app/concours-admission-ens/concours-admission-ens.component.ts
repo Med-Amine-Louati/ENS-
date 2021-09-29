@@ -13,6 +13,7 @@ export class ConcoursAdmissionEnsComponent implements OnInit {
     {
       title: 'Décret no 59-118 du 21/04/1959:',
       description:'relatif au règlement, au concours d’entrée et au diplôme de l’école normale supérieure.',
+      date : '19 octobre 2009 '
     },
     {
       title: 'Décret no 59-118 du 24/04/1959:',

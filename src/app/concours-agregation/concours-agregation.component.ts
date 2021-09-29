@@ -13,6 +13,7 @@ export class ConcoursAgregationComponent implements OnInit {
     {
       title: 'Décret n° 98-1430 du 13 juillet 1998,',
       description:'portant institution et organisation du concours d’agrégation dans les disciplines littéraires, des sciences humaines et des sciences fondamentales.',
+      date : '19 octobre 2009 '
     },
     {
       title: 'Arrêté des ministres de l’éducation et l’enseignement supérieur du 31 mai 2001,',

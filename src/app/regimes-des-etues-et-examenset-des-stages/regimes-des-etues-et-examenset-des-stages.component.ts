@@ -17,6 +17,7 @@ export class RegimesDesEtuesEtExamensetDesStagesComponent implements OnInit {
     {
       title: 'Arrêté du 08/11/1961',
       description:'relatif a l’équivalence des examens de l’école normale supérieure, des certificats de licences françaises et des certificats de licences tunisiennes.',
+      date : '19 octobre 2009 '
     },
     {
       title: '',

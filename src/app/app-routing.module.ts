@@ -8,6 +8,7 @@ import { ConcoursAdmissionEnsComponent } from './concours-admission-ens/concours
 import { ConcoursAgregationComponent } from './concours-agregation/concours-agregation.component'
 import { BourseEtVieUniversitaireComponent } from './bourse-et-vie-universitaire/bourse-et-vie-universitaire.component'
 import { StatutsParticuliersComponent } from './statuts-particuliers/statuts-particuliers.component'
+import { AdminEnsComponent } from './admin-ens/admin-ens.component'
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'cadrejuridique', component: CadreJuridiqueComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'cadrejuridique/concours-dagregation', component: ConcoursAgregationComponent },
   { path: 'cadrejuridique/bourse-et-vie-universitaire', component: BourseEtVieUniversitaireComponent },
   { path: 'cadrejuridique/statuts-particuliers', component: StatutsParticuliersComponent },
+  { path: 'administration-de-le-n-s', component: AdminEnsComponent },
 
 
 ];

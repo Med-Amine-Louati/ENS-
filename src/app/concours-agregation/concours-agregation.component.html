@@ -1,21 +1,20 @@
 <app-navbar></app-navbar>
-<section class="blog_area single-post-area section-padding">
+
+
+
 
 
 <h2>Concours d’agrégation
 
 </h2>
-<div class="desc" *ngFor="let text of texts">
+<div class="blog_details" *ngFor="let text of texts">
+  <a class="d-inline-block" >
+      <h2>{{text.title}}</h2>
+  </a>
+  <p> {{text.description}}</p>
+  <ul class="blog-info-link">
 
-  <h5>
-    <h3 >{{text.title}}</h3>
- </h5>
-  <p class="comment">
-    {{text.description}}
-  </p>
-
+      <li><a ><i class="fa fa-calendar"></i> {{text.date}}</a></li>
+  </ul>
 </div>
-
-
-</section>
-
+<app-footer></app-footer>

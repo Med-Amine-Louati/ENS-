@@ -11,8 +11,9 @@ export class BourseEtVieUniversitaireComponent implements OnInit {
   texts = [
 
     {
-      title: 'Décret n° 2009-3040 du 19 octobre 2009 ,',
+      title: 'Décret n° 2009-3040 ',
       description:'relatif aux bourses nationales et aux prêts universitaires au profit des étudiants et élèves de l’enseignement supérieur.',
+      date : '19 octobre 2009 '
     },
     {
       title: 'Arrêté du ministre de l’enseignement supérieur et de la recherche scientifique et de la Technologie du 26 Octobre 2009',
