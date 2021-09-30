@@ -1,0 +1,56 @@
+
+
+<form [formGroup]="student"  (ngSubmit)="onSubmit()">
+  <div class="wrapper">
+    <div class="title">Ajout etudiant</div>
+    <div class="form">
+
+      <div class="inputfield">
+
+        <label>Nom </label>
+        <input type="text" class="input"
+        formControlName="nom"
+    />
+      </div>
+
+
+      <div class="inputfield">
+        <label>Prénom</label>
+        <input type="text" class="input"
+        formControlName="prenom"
+       />
+      </div>
+      <div class="inputfield">
+        <label>Email Address</label>
+        <input type="text" class="input"
+        formControlName="email"
+        />
+      </div>
+      <div class="inputfield">
+        <label>Phone Number</label>
+        <input type="text" class="input"
+        formControlName="phone"
+        />
+      </div>
+      <div class="inputfield">
+        <label>Class</label>
+        <div class="custom_select">
+          <select>
+            <option value="" formControlName="classe"
+           >Select</option>
+
+            <option value="male" >Class 1</option>
+            <option value="female">Class 2</option>
+            <option value="male">Class 3</option>
+            <option value="female">Class 4</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="inputfield">
+        <input type="submit" value="Register" class="btn"
+        [disabled]="!student.valid"/>
+      </div>
+    </div>
+  </div>
+</form>

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CadreJuridiqueComponent } from './cadre-juridique/cadre-juridique.component';
 import { TextesgenerauxComponent } from './textesgeneraux/textesgeneraux.component';
@@ -14,6 +15,8 @@ import { BourseEtVieUniversitaireComponent } from './bourse-et-vie-universitaire
 import { StatutsParticuliersComponent } from './statuts-particuliers/statuts-particuliers.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdminEnsComponent } from './admin-ens/admin-ens.component';
+import { ForTestComponent } from './for-test/for-test.component';
+import { AddStudentComponent } from './add-student/add-student.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +31,16 @@ import { AdminEnsComponent } from './admin-ens/admin-ens.component';
       BourseEtVieUniversitaireComponent,
       StatutsParticuliersComponent,
       FooterComponent,
-      AdminEnsComponent
+      AdminEnsComponent,
+      ForTestComponent,
+      AddStudentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
