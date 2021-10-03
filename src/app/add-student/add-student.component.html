@@ -9,7 +9,7 @@
 
         <label>Nom </label>
         <input type="text" class="input"
-        formControlName="nom"
+        formControlName="first_name"
     />
       </div>
 
@@ -17,7 +17,7 @@
       <div class="inputfield">
         <label>Prénom</label>
         <input type="text" class="input"
-        formControlName="prenom"
+        formControlName="last_name"
        />
       </div>
       <div class="inputfield">
@@ -35,21 +35,18 @@
       <div class="inputfield">
         <label>Class</label>
         <div class="custom_select">
-          <select>
-            <option value="" formControlName="classe"
-           >Select</option>
+          <select formControlName="class_ext_id">
+            <option [ngValue]="null" disabled>Select</option>
+            <option *ngFor="let classe of classes" [ngValue]="classe.name">{{classe.name}}</option>
 
-            <option value="male" >Class 1</option>
-            <option value="female">Class 2</option>
-            <option value="male">Class 3</option>
-            <option value="female">Class 4</option>
+
           </select>
         </div>
       </div>
 
       <div class="inputfield">
         <input type="submit" value="Register" class="btn"
-        [disabled]="!student.valid"/>
+        />
       </div>
     </div>
   </div>

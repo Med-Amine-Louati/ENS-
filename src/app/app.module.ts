@@ -17,6 +17,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AdminEnsComponent } from './admin-ens/admin-ens.component';
 import { ForTestComponent } from './for-test/for-test.component';
 import { AddStudentComponent } from './add-student/add-student.component';
+import { StudentEspaceComponent } from './student-espace/student-espace.component';
+import { VideoCoursComponent } from './student-espace/video-cours/video-cours.component';
+
 
 @NgModule({
   declarations: [
@@ -33,16 +36,21 @@ import { AddStudentComponent } from './add-student/add-student.component';
       FooterComponent,
       AdminEnsComponent,
       ForTestComponent,
-      AddStudentComponent
+      AddStudentComponent,
+      StudentEspaceComponent,
+      VideoCoursComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

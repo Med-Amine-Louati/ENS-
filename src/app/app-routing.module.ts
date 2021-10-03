@@ -11,6 +11,8 @@ import { StatutsParticuliersComponent } from './statuts-particuliers/statuts-par
 import { AdminEnsComponent } from './admin-ens/admin-ens.component'
 import { ForTestComponent } from './for-test/for-test.component'
 import { AddStudentComponent } from './add-student/add-student.component'
+import { StudentEspaceComponent } from './student-espace/student-espace.component';
+import { VideoCoursComponent } from './student-espace/video-cours/video-cours.component'
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'cadrejuridique', component: CadreJuridiqueComponent },
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: 'cadrejuridique/statuts-particuliers', component: StatutsParticuliersComponent },
   { path: 'administration-de-le-n-s', component: AdminEnsComponent },
   { path: 'addstudent', component: AddStudentComponent },
+  { path : 'studentespace', component: StudentEspaceComponent},
+  { path : 'videocours', component: VideoCoursComponent},
   { path: 'test', component: ForTestComponent },
 
 
