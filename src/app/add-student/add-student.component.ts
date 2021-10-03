@@ -16,6 +16,7 @@ export class AddStudentComponent implements OnInit {
   email :String;
   phone : String;
   class_ext_id: Number;
+
   classes = [
     { id: 1, name: "classe 1" },
     { id: 2, name: "classe 2" },
@@ -31,6 +32,7 @@ export class AddStudentComponent implements OnInit {
     private formBuilder: FormBuilder,
     private http: HttpClient,
     private studentService: StudentService,
+    private router: Router,
 
 
   ) {
@@ -64,8 +66,16 @@ onSubmit() {
   console.log(this.student.value);
 
   this.http.post<any>('http://localhost:8000/students/add',this.student.value).subscribe((Response)=>{
+
     console.log(Response)
-  })
+    this.router.navigate(['/']);
+
+  },(error) => {
+    //Handle the error here
+    //If not handled, then throw it
+    console.log(error.error.error_message); ;
+ }
+  )
 }
 
 
