@@ -65,7 +65,14 @@
         <script src="../assets/js/plugins.js"></script>
         <script src="../assets/js/main.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <script type="text/javascript">
+          // Add x-csrf-token to all ajax request
+          $.ajaxSetup({
+              headers: {
+                  'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
+              }
+          });
+        </script>
 </body>
 </html>

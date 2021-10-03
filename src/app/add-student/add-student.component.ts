@@ -19,6 +19,7 @@ export class AddStudentComponent implements OnInit {
     { id: 5, name: "classe 5" }
   ];
   student: FormGroup;
+
   httpOptions: { headers: any; };
 
   constructor(
@@ -56,9 +57,11 @@ get f () {
   return this.student.controls;
 }
 onSubmit() {
-  this.http.post('http://localhost:8000/subjects/add',{student:this.student.value}).subscribe((Response)=>{
-
+  console.log(this.student.value);
+  this.http.post('http://localhost:8000/students/add',{student:this.student.value, _token:'{{ csrf_token() }}'}).subscribe((Response)=>{
     console.log(Response)
   })
 }
+
+
 }

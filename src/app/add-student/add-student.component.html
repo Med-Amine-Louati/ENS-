@@ -1,6 +1,7 @@
 
 
 <form [formGroup]="student"  (ngSubmit)="onSubmit()">
+
   <div class="wrapper">
     <div class="title">Ajout etudiant</div>
     <div class="form">
@@ -37,7 +38,7 @@
         <div class="custom_select">
           <select formControlName="class_ext_id">
             <option [ngValue]="null" disabled>Select</option>
-            <option *ngFor="let classe of classes" [ngValue]="classe.name">{{classe.name}}</option>
+            <option *ngFor="let classe of classes" [ngValue]="classe.id">{{classe.name}}</option>
 
 
           </select>
