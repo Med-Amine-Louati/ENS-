@@ -11,14 +11,14 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Student
- * 
+ *
  * @property int $student_id
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string $email
  * @property string|null $phone
  * @property int|null $class_ext_id
- * 
+ *
  * @property Collection|Subject[] $subjects
  * @property Collection|Teacher[] $teachers
  *
@@ -39,7 +39,8 @@ class Student extends Model
 		'last_name',
 		'email',
 		'phone',
-		'class_ext_id'
+        'class_ext_id'
+
 	];
 
 	public function subjects()

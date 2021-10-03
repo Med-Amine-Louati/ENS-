@@ -11,6 +11,11 @@ import {StudentService } from '../services/student';
   styleUrls: ['./add-student.component.css']
 })
 export class AddStudentComponent implements OnInit {
+  first_name : String;
+  last_name : String;
+  email :String;
+  phone : String;
+  class_ext_id: Number;
   classes = [
     { id: 1, name: "classe 1" },
     { id: 2, name: "classe 2" },
@@ -42,8 +47,7 @@ export class AddStudentComponent implements OnInit {
     this.student = this.formBuilder.group({
       first_name: ['', Validators.required],
       last_name: ['', Validators.required],
-
-      email: ['', Validators.required],
+       email: ['', Validators.required],
       phone: ['', Validators.required],
       class_ext_id: ['', Validators.required],
 
@@ -58,7 +62,8 @@ get f () {
 }
 onSubmit() {
   console.log(this.student.value);
-  this.http.post('http://localhost:8000/students/add',{student:this.student.value, _token:'{{ csrf_token() }}'}).subscribe((Response)=>{
+
+  this.http.post<any>('http://localhost:8000/students/add',this.student.value).subscribe((Response)=>{
     console.log(Response)
   })
 }

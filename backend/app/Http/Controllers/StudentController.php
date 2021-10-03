@@ -10,13 +10,14 @@ class StudentController extends Controller
     public function storeStudent(Request $request){
         $payLoad = $request->all();
         try{
-            $student = Student::where('email', '=',$payLoad['email'])->first();
+          $student = Student::where('email', '=',$payLoad['email'])->first();
             if ($student === null) {
                 Student::create([
                     "first_name"=>$payLoad['first_name'],
                     "last_name"=>$payLoad['last_name'],
                     "email"=>$payLoad['email'],
-                    "phone"=>$payLoad['phone']
+                    "phone"=>$payLoad['phone'],
+                    "class_ext_id"=>$payLoad['class_ext_id']
                 ]);
 
                 return response(['code'=>'success'],200);
