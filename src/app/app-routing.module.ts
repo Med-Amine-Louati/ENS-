@@ -10,7 +10,7 @@ import { BourseEtVieUniversitaireComponent } from './bourse-et-vie-universitaire
 import { StatutsParticuliersComponent } from './statuts-particuliers/statuts-particuliers.component'
 import { AdminEnsComponent } from './admin-ens/admin-ens.component'
 import { ForTestComponent } from './for-test/for-test.component'
-import { AddStudentComponent } from './add-student/add-student.component'
+import { AddStudentComponent } from './student-espace/add-student/add-student.component'
 import { StudentEspaceComponent } from './student-espace/student-espace.component';
 import { VideoCoursComponent } from './student-espace/video-cours/video-cours.component'
 const routes: Routes = [

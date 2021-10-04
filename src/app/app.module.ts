@@ -16,9 +16,13 @@ import { StatutsParticuliersComponent } from './statuts-particuliers/statuts-par
 import { FooterComponent } from './footer/footer.component';
 import { AdminEnsComponent } from './admin-ens/admin-ens.component';
 import { ForTestComponent } from './for-test/for-test.component';
-import { AddStudentComponent } from './add-student/add-student.component';
+import { AddStudentComponent } from './student-espace/add-student/add-student.component';
 import { StudentEspaceComponent } from './student-espace/student-espace.component';
 import { VideoCoursComponent } from './student-espace/video-cours/video-cours.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StudentMaterialsModule } from './student-espace/student-module'
+import {MatNativeDateModule} from '@angular/material/core';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 
 @NgModule({
@@ -38,15 +42,18 @@ import { VideoCoursComponent } from './student-espace/video-cours/video-cours.co
       ForTestComponent,
       AddStudentComponent,
       StudentEspaceComponent,
-      VideoCoursComponent
+      VideoCoursComponent,
+      LoginFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-
+    StudentMaterialsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatNativeDateModule
   ],
   providers: [
 
