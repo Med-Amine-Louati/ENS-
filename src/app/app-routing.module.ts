@@ -13,6 +13,7 @@ import { ForTestComponent } from './for-test/for-test.component'
 import { AddStudentComponent } from './student-espace/add-student/add-student.component'
 import { StudentEspaceComponent } from './student-espace/student-espace.component';
 import { VideoCoursComponent } from './student-espace/video-cours/video-cours.component'
+import { LoginFormComponent } from './login-form/login-form.component'
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'cadrejuridique', component: CadreJuridiqueComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'addstudent', component: AddStudentComponent },
   { path : 'studentespace', component: StudentEspaceComponent},
   { path : 'videocours', component: VideoCoursComponent},
+  { path : 'login', component: LoginFormComponent},
   { path: 'test', component: ForTestComponent },
 
 
