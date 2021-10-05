@@ -23,6 +23,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StudentMaterialsModule } from './student-espace/student-module'
 import {MatNativeDateModule} from '@angular/material/core';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { EmploiDuTempsComponent } from './student-espace/emploi-du-temps/emploi-du-temps.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { TeacherEspaceComponent } from './teacher-espace/teacher-espace.component';
 
 
 @NgModule({
@@ -43,7 +46,9 @@ import { LoginFormComponent } from './login-form/login-form.component';
       AddStudentComponent,
       StudentEspaceComponent,
       VideoCoursComponent,
-      LoginFormComponent
+      LoginFormComponent,
+      EmploiDuTempsComponent,
+      TeacherEspaceComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +58,8 @@ import { LoginFormComponent } from './login-form/login-form.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    PdfViewerModule
   ],
   providers: [
 

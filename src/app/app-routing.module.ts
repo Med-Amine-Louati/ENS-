@@ -14,6 +14,8 @@ import { AddStudentComponent } from './student-espace/add-student/add-student.co
 import { StudentEspaceComponent } from './student-espace/student-espace.component';
 import { VideoCoursComponent } from './student-espace/video-cours/video-cours.component'
 import { LoginFormComponent } from './login-form/login-form.component'
+import { EmploiDuTempsComponent } from './student-espace/emploi-du-temps/emploi-du-temps.component';
+import { TeacherEspaceComponent } from './teacher-espace/teacher-espace.component'
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'cadrejuridique', component: CadreJuridiqueComponent },
@@ -25,10 +27,14 @@ const routes: Routes = [
   { path: 'cadrejuridique/statuts-particuliers', component: StatutsParticuliersComponent },
   { path: 'administration-de-le-n-s', component: AdminEnsComponent },
   { path: 'addstudent', component: AddStudentComponent },
-  { path : 'studentespace', component: StudentEspaceComponent},
+  { path : 'espace-etudiant', component: StudentEspaceComponent},
+  { path : 'espace-enseignant', component: TeacherEspaceComponent},
+
   { path : 'videocours', component: VideoCoursComponent},
   { path : 'login', component: LoginFormComponent},
+  { path: 'emploi-du-temps', component: EmploiDuTempsComponent },
   { path: 'test', component: ForTestComponent },
+
 
 
 
