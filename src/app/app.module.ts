@@ -26,6 +26,9 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { EmploiDuTempsComponent } from './student-espace/emploi-du-temps/emploi-du-temps.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { TeacherEspaceComponent } from './teacher-espace/teacher-espace.component';
+import { NewsPageComponent } from './news-page/news-page.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GalerieComponent } from './galerie/galerie.component';
 
 
 @NgModule({
@@ -48,7 +51,9 @@ import { TeacherEspaceComponent } from './teacher-espace/teacher-espace.componen
       VideoCoursComponent,
       LoginFormComponent,
       EmploiDuTempsComponent,
-      TeacherEspaceComponent
+      TeacherEspaceComponent,
+      NewsPageComponent,
+      GalerieComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +64,8 @@ import { TeacherEspaceComponent } from './teacher-espace/teacher-espace.componen
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatNativeDateModule,
-    PdfViewerModule
+    PdfViewerModule,
+    NgbModule
   ],
   providers: [
 

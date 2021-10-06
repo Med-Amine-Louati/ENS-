@@ -20,6 +20,7 @@ export class TeacherEspaceComponent implements OnInit {
 
 
   ngOnInit(): void {
+
   }
 
 }

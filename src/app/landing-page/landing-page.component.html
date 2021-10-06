@@ -1,6 +1,7 @@
 <app-navbar></app-navbar>
 
 <main>
+
   <!-- Trending Area Start -->
   <div class="trending-area fix">
     <div class="container">
@@ -14,7 +15,15 @@
               <div class="trending-animated">
                 <ul id="js-news" class="js-hidden">
                   <li class="news-item">
-                    Concours d’accès à l’E.N.S Juillet 2021 <br />
+                      <a [routerLink]="['/article']">
+                        Concours d’accès à l’E.N.S Juillet 2021 <br />
+
+                      </a>
+
+                    </li>
+
+                  <li class="news-item">
+                    Concours d’accès à l’E.N.S Juillet 2020 <br />
                     2021
                   </li>
                   <li class="news-item">
@@ -128,7 +137,7 @@
                   <img src="assets/img/news/1.jpg" alt="" />
                 </div>
                 <div class="weekly-caption">
-                  <h4><a href="#">Prise de vues E.N.S</a></h4>
+                  <h4><a [routerLink]="['/galerie']">Prise de vues E.N.S</a></h4>
                 </div>
               </div>
 
