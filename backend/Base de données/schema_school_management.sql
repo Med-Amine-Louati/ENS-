@@ -298,7 +298,7 @@ UNLOCK TABLES;
 --
 
 DROP TABLE IF EXISTS `user`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */
+
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
@@ -364,4 +364,4 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-02-13 18:28:19
-/* mysql -u root -p schoolschema < [path] schema_school_management.sql */
+/* mysql -u root -p schoolschema < schema_school_management.sql */
