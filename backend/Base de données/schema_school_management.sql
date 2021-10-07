@@ -142,7 +142,7 @@ CREATE TABLE `student` (
 
 LOCK TABLES `student` WRITE;
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES (1,'anwar','benjeddou','anwar.benjeddou@gmail.com','93572564',NULL),(2,'rafik','haddad','rafik.haddad@gmail.com','22078222',NULL),(3,'ahmed','rahameni','ahmed.ahmed@gmail.com','22078222',NULL);
+INSERT INTO `student` VALUES (1,'anwar','benjeddou','anwar.benjeddou@gmail.com','93572564',1),(2,'rafik','haddad','rafik.haddad@gmail.com','22078222',2),(3,'ahmed','rahameni','ahmed.ahmed@gmail.com','22078222',3);
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 
