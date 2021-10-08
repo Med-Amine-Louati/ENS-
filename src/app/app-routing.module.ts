@@ -17,6 +17,7 @@ import { LoginFormComponent } from './login-form/login-form.component'
 import { EmploiDuTempsComponent } from './student-espace/emploi-du-temps/emploi-du-temps.component';
 import { TeacherEspaceComponent } from './teacher-espace/teacher-espace.component'
 import { NewsPageComponent } from './news-page/news-page.component';
+import { AdminDashBoardComponent } from './admin-dash-board/admin-dash-board.component'
 import { GalerieComponent } from './galerie/galerie.component';
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -36,6 +37,8 @@ const routes: Routes = [
   { path : 'videocours', component: VideoCoursComponent},
   { path : 'login', component: LoginFormComponent},
   { path: 'emploi-du-temps', component: EmploiDuTempsComponent },
+  { path: 'admin', component: AdminDashBoardComponent },
+
   { path: 'test', component: ForTestComponent },
 
 

@@ -31,6 +31,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GalerieComponent } from './galerie/galerie.component';
 import { StudentCardComponent } from './student-espace/student-card/student-card.component';
 import { ExamNoteComponent } from './teacher-espace/exam-note/exam-note.component';
+import { AdminDashBoardComponent } from './admin-dash-board/admin-dash-board.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { ExamNoteComponent } from './teacher-espace/exam-note/exam-note.componen
       NewsPageComponent,
       GalerieComponent,
       StudentCardComponent,
-      ExamNoteComponent
+      ExamNoteComponent,
+      AdminDashBoardComponent
   ],
   imports: [
     BrowserModule,
