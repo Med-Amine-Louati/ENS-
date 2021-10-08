@@ -19,6 +19,7 @@ import { TeacherEspaceComponent } from './teacher-espace/teacher-espace.componen
 import { NewsPageComponent } from './news-page/news-page.component';
 import { AdminDashBoardComponent } from './admin-dash-board/admin-dash-board.component'
 import { GalerieComponent } from './galerie/galerie.component';
+import { LoginComponent } from './admin-dash-board/login/login.component';
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'cadrejuridique', component: CadreJuridiqueComponent },
@@ -38,6 +39,9 @@ const routes: Routes = [
   { path : 'login', component: LoginFormComponent},
   { path: 'emploi-du-temps', component: EmploiDuTempsComponent },
   { path: 'admin', component: AdminDashBoardComponent },
+  { path: 'adminLogin', component: LoginComponent },
+
+
 
   { path: 'test', component: ForTestComponent },
 
