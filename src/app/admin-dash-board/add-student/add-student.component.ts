@@ -42,6 +42,10 @@ export class AddStudentComponent implements OnInit {
       console.log(result);
     })
 
+    this.http.get<any>(`http://localhost:8000/students/get/${1}`).subscribe(result => {
+      console.log(result.content);
+    })
+
 
 
     this.student = this.formBuilder.group({
@@ -57,9 +61,18 @@ export class AddStudentComponent implements OnInit {
 
 }
 
+
 get f () {
   return this.student.controls;
 }
+
+
+getStudent(){
+
+
+
+}
+
 onSubmit() {
   console.log(this.student.value);
 

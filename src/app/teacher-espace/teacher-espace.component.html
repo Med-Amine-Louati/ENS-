@@ -35,14 +35,18 @@
 
 
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#Product" data-toggle="tab">Ajout Cours Video</a></li>
+    <li class="active"><a href="#Home" data-toggle="tab">Emploi du temps </a></li>
+
+    <li ><a href="#Product" data-toggle="tab">Ajout Cours Video</a></li>
 
     <li><a href="#Contact" data-toggle="tab">Note</a></li>
   </ul>
 
 
   <div class="tab-content">
-
+    <div id="Home" class="tab-pane fade in active">
+      <app-emploi-du-temps> </app-emploi-du-temps>
+    </div>
     <div id="Product" class="tab-pane fade">
       <app-video-cours></app-video-cours>
     </div>
