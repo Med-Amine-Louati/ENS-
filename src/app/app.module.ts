@@ -16,7 +16,7 @@ import { StatutsParticuliersComponent } from './statuts-particuliers/statuts-par
 import { FooterComponent } from './footer/footer.component';
 import { AdminEnsComponent } from './admin-ens/admin-ens.component';
 import { ForTestComponent } from './for-test/for-test.component';
-import { AddStudentComponent } from './student-espace/add-student/add-student.component';
+import { AddStudentComponent } from './admin-dash-board/add-student/add-student.component';
 import { StudentEspaceComponent } from './student-espace/student-espace.component';
 import { VideoCoursComponent } from './student-espace/video-cours/video-cours.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,6 +32,7 @@ import { GalerieComponent } from './galerie/galerie.component';
 import { StudentCardComponent } from './student-espace/student-card/student-card.component';
 import { ExamNoteComponent } from './teacher-espace/exam-note/exam-note.component';
 import { AdminDashBoardComponent } from './admin-dash-board/admin-dash-board.component';
+import { CreationGroupeComponent } from './admin-dash-board/creation-groupe/creation-groupe.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { AdminDashBoardComponent } from './admin-dash-board/admin-dash-board.com
       GalerieComponent,
       StudentCardComponent,
       ExamNoteComponent,
-      AdminDashBoardComponent
+      AdminDashBoardComponent,
+      CreationGroupeComponent
   ],
   imports: [
     BrowserModule,
