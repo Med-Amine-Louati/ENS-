@@ -29,6 +29,7 @@ import { TeacherEspaceComponent } from './teacher-espace/teacher-espace.componen
 import { NewsPageComponent } from './news-page/news-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GalerieComponent } from './galerie/galerie.component';
+import { StudentCardComponent } from './student-espace/student-card/student-card.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { GalerieComponent } from './galerie/galerie.component';
       EmploiDuTempsComponent,
       TeacherEspaceComponent,
       NewsPageComponent,
-      GalerieComponent
+      GalerieComponent,
+      StudentCardComponent
   ],
   imports: [
     BrowserModule,
