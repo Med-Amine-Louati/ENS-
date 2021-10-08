@@ -33,6 +33,7 @@ import { StudentCardComponent } from './student-espace/student-card/student-card
 import { ExamNoteComponent } from './teacher-espace/exam-note/exam-note.component';
 import { AdminDashBoardComponent } from './admin-dash-board/admin-dash-board.component';
 import { CreationGroupeComponent } from './admin-dash-board/creation-groupe/creation-groupe.component';
+import { LoginComponent } from './admin-dash-board/login/login.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { CreationGroupeComponent } from './admin-dash-board/creation-groupe/crea
       StudentCardComponent,
       ExamNoteComponent,
       AdminDashBoardComponent,
-      CreationGroupeComponent
+      CreationGroupeComponent,
+      LoginComponent
   ],
   imports: [
     BrowserModule,

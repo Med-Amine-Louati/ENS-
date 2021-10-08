@@ -19,18 +19,9 @@
       <th>Name</th>
 
     </tr>
-    <tr>
-      <td>CS225</td>
-      <td>Data Strutures</td>
-      <td>Fall 2015</td>
-      <td id="crID">
-       <input id="csCredit" type="number" >
-      </td>
 
-
-    </tr>
-    <tr>
-      <td>PHIL 105</td>
+    <tr *ngFor="let student of students">
+      <td>{{student.first_name}} {{student.last_name}}</td>
       <td>Ethics</td>
       <td>Fall 2015</td>
       <td id="crID">
@@ -39,45 +30,16 @@
 
 
     </tr>
-    <tr>
-      <td>ECE 310</td>
-      <td>Digital Signal Processing</td>
-      <td>Fall 2015</td>
-      <td id="crID">
-       <input type="TEXT" name="CS" size=10>
-      </td>
 
 
-    </tr>
-    <tr>
-      <td>CS 373</td>
-      <td>Combinatorial Algorithms</td>
-      <td>Fall 2015</td>
-      <td id="crID">
-       <input type="TEXT" name="CS" size=10>
-      </td>
 
 
-    </tr>
-    <tr>
-      <td>ECE 310</td>
-      <td>Multi-Variable Calculus</td>
-      <td>Fall 2015</td>
-      <td id="crID">
-       <input type="TEXT" name="CS" size=10>
-      </td>
-
-
-    </tr>
     <tr>
       <td colspan=3 class='textalign'>Total</td>
       <td id="crID" onchange="addCalc()"></td>
       <td colspan=2>55.95</td>
     </tr>
-    <tr>
-      <td colspan=3 class='textalign'>GPA</td>
-      <td colspan=3>3.73 / 4.0</td>
-    </tr>
+
 
 </table>
 
