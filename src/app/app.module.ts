@@ -30,6 +30,7 @@ import { NewsPageComponent } from './news-page/news-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GalerieComponent } from './galerie/galerie.component';
 import { StudentCardComponent } from './student-espace/student-card/student-card.component';
+import { ExamNoteComponent } from './teacher-espace/exam-note/exam-note.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { StudentCardComponent } from './student-espace/student-card/student-card
       TeacherEspaceComponent,
       NewsPageComponent,
       GalerieComponent,
-      StudentCardComponent
+      StudentCardComponent,
+      ExamNoteComponent
   ],
   imports: [
     BrowserModule,
